@@ -10,10 +10,12 @@ giftButton.addEventListener("click", () => {
 
 // Characters
 let characters = [
-    { name: "Alice", trait: "Brave", religion: "Christian" },
-    { name: "Bob", trait: "Smart", religion: "Muslim" },
-    { name: "Carol", trait: "Kind", religion: "Hindu" }
-];
+    { name: "Caroline", trait: "Brave", religion: "Christian" },
+    { name: "Hardy", trait: "Smart", religion: "Muslim" },
+    { name: "Jonathan", trait: "Kind", religion: "Christian" },
+    { name: "Syila", trait: "Loyal", religion: "Muslim" },
+    { name: "Ulil", trait: "Self-confidence", religion: "Muslim" },
+    { name: "Yeremia", trait: "Friendly", religion: "Christian" }]
 
 const characterList = document.getElementById("characterList");
 

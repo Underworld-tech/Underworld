@@ -1,18 +1,31 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" sizes="any" href="/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI Town</title>
-    <meta
-      name="description"
-      content="A virtual town where AI characters live, chat and socialize"
-    />
-    <script defer data-domain="convex.dev" src="https://plausible.io/js/script.js"></script>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <title>AI Town Gift Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome to AI Town Gift Hub</h1>
+    <p>Click the button below to claim your gift!</p>
+    <button id="giftButton">Claim Gift</button>
+    <div id="giftMessage"></div>
+
+    <hr>
+
+    <h2>Characters</h2>
+    <ul id="characterList"></ul>
+
+    <h3>Add New Character</h3>
+    <input type="text" id="newCharName" placeholder="Name">
+    <input type="text" id="newCharTrait" placeholder="Trait">
+    <input type="text" id="newCharReligion" placeholder="Religion">
+    <button id="addCharButton">Add Character</button>
+
+    <h3>Change Trait of First Character</h3>
+    <input type="text" id="changeTraitInput" placeholder="New trait">
+    <button id="changeTraitButton">Change Trait</button>
+
+    <script src="script.js"></script>
+</body>
 </html>

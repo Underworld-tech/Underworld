@@ -8,59 +8,22 @@ giftButton.addEventListener("click", () => {
     giftMessage.textContent = `You received: ${randomGift}!`;
 });
 
-// Characters with religion
+// Characters
 let characters = [
-    { name: "Caroline", trait: "Brave", religion: "Christian" },
-    { name: "Hardy", trait: "Smart", religion: "Muslim" },
-    { name: "Jonathan", trait: "Kind", religion: "Christian" },
-    { name: "Syila", trait: "Loyal", religion: "Muslim" },
-    { name: "Ulil", trait: "Self-confidence", religion: "Muslim" },
-    { name: "Yeremia", trait: "Friendly", religion: "Christian" }
+    { name: "Alice", trait: "Brave", religion: "Christian" },
+    { name: "Bob", trait: "Smart", religion: "Muslim" },
+    { name: "Carol", trait: "Kind", religion: "Hindu" }
 ];
 
 const characterList = document.getElementById("characterList");
 
-// Function to display characters
 function displayCharacters() {
     characterList.innerHTML = "";
-    characters.forEach((char, index) => {
+    characters.forEach((char) => {
         const li = document.createElement("li");
         li.textContent = `${char.name} - ${char.trait} - ${char.religion}`;
         characterList.appendChild(li);
     });
 }
 
-// Initial display
 displayCharacters();
-
-// Add new character
-const newCharName = document.getElementById("newCharName");
-const newCharTrait = document.getElementById("newCharTrait");
-const newCharReligion = document.getElementById("newCharReligion");
-const addCharButton = document.getElementById("addCharButton");
-
-addCharButton.addEventListener("click", () => {
-    if(newCharName.value && newCharTrait.value && newCharReligion.value) {
-        characters.push({ 
-            name: newCharName.value, 
-            trait: newCharTrait.value,
-            religion: newCharReligion.value
-        });
-        displayCharacters();
-        newCharName.value = "";
-        newCharTrait.value = "";
-        newCharReligion.value = "";
-    }
-});
-
-// Change trait of first character
-const changeTraitInput = document.getElementById("changeTraitInput");
-const changeTraitButton = document.getElementById("changeTraitButton");
-
-changeTraitButton.addEventListener("click", () => {
-    if(changeTraitInput.value) {
-        characters[0].trait = changeTraitInput.value;
-        displayCharacters();
-        changeTraitInput.value = "";
-    }
-});

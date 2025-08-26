@@ -1,0 +1,40 @@
+{
+  "characters": [
+    {
+      "name": "Caroline",
+      "trait": "Brave",
+      "religion": "Christian"
+    },
+    {
+      "name": "Hardy",
+      "trait": "Smart",
+      "religion": "Muslim"
+    },
+    {
+      "name": "Jonathan",
+      "trait": "Kind",
+      "religion": "Christian"
+    },
+    {
+      "name": "Syila",
+      "trait": "Loyal",
+      "religion": "Muslim"
+    },
+    {
+      "name": "Ulil",
+      "trait": "Self-confidence",
+      "religion": "Muslim"
+    },
+    {
+      "name": "Yeremia",
+      "trait": "Friendly",
+      "religion": "Christian"
+    }
+  ],
+  "gifts": [
+    "100 Coins",
+    "1 Rare Item",
+    "50 Gems",
+    "Special Potion"
+  ]
+}
